@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .form-login{
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            align-items: center;
+            height: 50vh;
+            justify-content: center;
+            border: 1px solid black;
+        }
+
+        .form-login input{
+            box-sizing: border-box;
+            width: 50%;
+            padding: 1em;
+            /* border: 1px solid red; */
+            
+        }
+
+    </style>
+</head>
+<body>
+    <h1>HTML Form</h1>
+
+    <form action="" class="form-login">
+        <input type="text" name="name" id="name" placeholder="Your Name">
+        <input type="password" name="password" id="password" placeholder="Your Password">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

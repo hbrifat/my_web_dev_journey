@@ -1,0 +1,34 @@
+body{
+    background-color: skyblue;
+    color: black;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-weight: bold;
+}
+
+
+h1{
+    background-color: wheat;
+    color: brown;
+    text-decoration: underline;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+p{
+    background-color: azure;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+h3 {
+    text-decoration: underline;
+    background-color: white;
+    text-align: center;
+}
+
+li {
+    text-decoration: underline;
+}

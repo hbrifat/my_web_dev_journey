@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            margin: 1em;
+            display: grid;
+            gap: 1em;
+            grid-template-areas: 
+            "header header header header"
+            "nav main main sidebar"
+            "nav main main advertise"
+            "footer footer footer footer"
+            ;
+        }
+       .header, .nav, .main, .sidebar, .advertise, .footer{
+        background-color: gold;
+        color: black;
+        border: 2px solid tomato;
+        border-radius: 8px;
+        padding: .5em;
+       }
+       .header{
+        grid-area: header;
+       }
+       .nav{
+        grid-area: nav;
+       }
+       .main{
+        grid-area: main;
+       }
+       .sidebar{
+        grid-area: sidebar;
+       }
+       .advertise{
+        grid-area: advertise;
+       }
+       .footer{
+        grid-area: footer;
+       }
+       .main h3{
+        margin: 1em 0;
+       }
+       .nav ul li{
+        list-style: none;
+       }
+
+       @media screen and (max-width: 576px) {
+        .container{
+            grid-template-areas: 
+            "header"
+            "nav"
+            "main"
+            "sidebar"
+            "advertise"
+            "footer"
+            ;
+        }
+
+        .nav {
+            text-align: center;
+        }
+       } 
+       
+       @media screen and (min-width: 576px) and (max-width: 992px) {
+            .container{
+                grid-template-areas: 
+                "header    header header"
+                "nav       nav    nav"
+                "sidebar   main   main"
+                "advertise footer footer"
+                ;
+            }
+            .nav ul{
+                display: flex;
+                justify-content: space-between;
+            }
+       }
+    </style>
+</head>
+<body class="container">
+    <header class="header">
+        <h3>The Header</h3>
+    </header>
+    <nav class="nav">
+        <ul>
+            <li><a href="#">Nav Link - 1</a></li>
+            <li><a href="#">Nav Link - 2</a></li>
+            <li><a href="#">Nav Link - 3</a></li>
+        </ul>
+    </nav>
+    <main class="main">
+        <h3>Main Article</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, commodi! Iure, commodi eum laboriosam ea non suscipit pariatur deleniti velit similique rem voluptatum doloremque sunt molestiae error nemo ipsam assumenda officia hic voluptas? Neque maiores at eius omnis dolore mollitia velit placeat odio, dolores, pariatur voluptatibus nobis suscipit autem sint sunt! Debitis veritatis a culpa eligendi, magni quaerat autem rem illum in ab porro nostrum eveniet dolorem! Quasi sapiente ipsum asperiores consequuntur necessitatibus voluptates. Nobis iste modi obcaecati velit repellat aliquid deserunt minima et quae ipsa! Optio dolores, ducimus praesentium quia delectus libero veniam provident iure reprehenderit perspiciatis doloribus autem.</p>
+    </main>
+    <aside class="sidebar">
+        <h3>Sidebar</h3>
+    </aside>
+    <aside class="advertise">
+        <h3>Advertisement</h3>
+    </aside>
+    <footer class="footer">
+        <h3>The Footer</h3>
+    </footer>
+</body>
+</html>

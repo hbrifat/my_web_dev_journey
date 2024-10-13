@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Center</title>
+    <style>
+        .first-para{
+            text-align: center;
+            border: 5px solid black;
+            margin-bottom: 50px !important;
+            padding: 10px;
+        }
+
+        .center{
+            width: 50%;
+            margin: 50px auto;
+            border: 2px solid red;
+        }
+
+        img{
+            display: block;
+        }
+
+        .container {
+            position: relative;
+            height: 350px;
+            border: 3px solid #006100;
+        }
+
+        .centered-element{
+            /* height: 100px; */
+            position: absolute;
+            top: 50%;
+            /* left: 50%; */
+            border: 1px solid;
+            transform: translateY(-50%);
+            /* transform: translateX(-50%); */
+        }
+
+        .centered-element>img{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Only text is centered, not the element -->
+    <p class="first-para center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, quibusdam.</p>
+
+
+    <div class="center">
+        <p class="second-para first-para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis at mollitia accusamus animi odit eligendi impedit corrupti minima unde! Officia officiis alias blanditiis in quos delectus accusamus enim provident reprehenderit quod dicta est tempore eius ex qui assumenda cumque velit cupiditate, mollitia placeat repellendus id porro. Mollitia eligendi placeat quidem, provident maxime magnam cupiditate voluptatibus obcaecati animi dolorem repellendus quos distinctio impedit laboriosam ipsam illum accusantium quisquam ea vitae corporis eaque veritatis quas. Nisi nihil ex placeat. Reprehenderit beatae iusto error soluta distinctio officia dolorem praesentium laborum sapiente omnis nemo, laudantium voluptatum aliquam minus rerum deleniti labore repudiandae et? Quibusdam, eaque architecto? Ad officiis deleniti quaerat doloribus esse, impedit, libero accusantium consequuntur veritatis aperiam quis magni, quam est provident aliquid tempore. Veritatis quidem culpa maxime eveniet sit quaerat, asperiores, nobis repellat laborum nemo omnis enim dolores alias illo ipsum ad aperiam consectetur veniam, eius cumque perferendis commodi! Similique, doloribus minus?</p>
+    </div>
+
+
+    <img class="center" src="salaryGermany.png" alt="German Salary" width="50%">
+
+    <div class="container">
+        <div class="centered-element">
+            <p>Hello, This is Chayti</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="centered-element">
+            <img src="salaryGermany.png" alt="German Salary" width="60%">
+        </div>
+    </div>
+</body>
+</html>

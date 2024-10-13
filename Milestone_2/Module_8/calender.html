@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calender With Grid</title>
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap');
+
+        body{
+            /* background-color: aliceblue; */
+            font-family: "Azeret Mono", monospace;
+            font-weight: normal;
+        }
+
+        
+        .main-container{
+            /* background-color: antiquewhite; */
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: 40px repeat(5, 1fr);
+            grid-gap: .5rem;
+        }
+
+        .day, .date{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* width: 30px; */
+            /* margin: 0 auto; */
+            /* text-align: center; */
+            padding: .2rem;
+            border-radius: 5px;
+            height: 30px;
+            border: .2px solid black;
+        }
+
+        .day{
+            background-color: rgb(245, 243, 243);
+            /* color: white; */
+        }
+
+        .day:hover, .date:hover{
+            color: white;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <h1>Grid | Calender</h1>
+
+    <h3>August | 2024</h3>
+
+    <div class="main-container">
+        <div class="day">S</div>
+        <div class="day">M</div>
+        <div class="day">T</div>
+        <div class="day">W</div>
+        <div class="day">Th</div>
+        <div class="day">F</div>
+        <div class="day">S</div>
+        <div class="date">28</div>
+        <div class="date">29</div>
+        <div class="date">30</div>
+        <div class="date">31</div>
+        <div class="date">1</div>
+        <div class="date">2</div>
+        <div class="date">3</div>
+        <div class="date">4</div>
+        <div class="date">5</div>
+        <div class="date">6</div>
+        <div class="date">7</div>
+        <div class="date">8</div>
+        <div class="date">9</div>
+        <div class="date">10</div>
+        <div class="date">11</div>
+        <div class="date">12</div>
+        <div class="date">13</div>
+        <div class="date">14</div>
+        <div class="date">15</div>
+        <div class="date">16</div>
+        <div class="date">17</div>
+        <div class="date">18</div>
+        <div class="date">19</div>
+        <div class="date">20</div>
+        <div class="date">21</div>
+        <div class="date">22</div>
+        <div class="date">23</div>
+        <div class="date">24</div>
+        <div class="date">25</div>
+        <div class="date">26</div>
+        <div class="date">27</div>
+        <div class="date">28</div>
+        <div class="date">29</div>
+        <div class="date">30</div>
+        <div class="date">31</div>
+    </div>
+</body>
+</html>

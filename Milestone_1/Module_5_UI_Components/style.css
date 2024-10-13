@@ -1,0 +1,21 @@
+.parent{
+    padding: 25px;
+    background-color: bisque;
+    display: flex;
+    gap: 2rem;
+    /* justify-content: end; */
+    /* height: 600px; */
+    /* align-items: end; */
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+}
+
+
+.child{
+    padding: 20px;
+    margin: 10px 0;
+    border: 2px solid navy;
+    background-color: aliceblue;
+    font-size: larger;
+}
+

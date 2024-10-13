@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .container{
+            /* background-color: aliceblue; */
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: .5rem;
+        }
+
+        .content{
+            border: 1px solid gainsboro;
+            border-radius: 5px;
+            padding: 1em;
+        }
+
+        .content img{
+            width: 100%;
+        }
+
+        @media screen and (max-width: 576px) {
+            .container{
+                grid-template-columns: repeat(1, 1fr);
+                gap: 2em;
+            }
+        }
+
+        @media screen and (min-width: 576px) and (max-width: 640px) {
+            .container{
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Responsive Layout</h1>
+    <!-- .container>.content*12>img[src=food.webp]+h3{Item-$}+p{Price: \$$00}+p>lorem20 -->
+    <div class="container">
+        <div class="content">
+            <img src="food.webp" alt="">
+            <h3>Item-1</h3>
+            <p>Price: $100</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur exercitationem ab at corrupti obcaecati. Enim numquam id similique animi molestiae.</p>
+        </div>
+        <div class="content">
+            <img src="food.webp" alt="">
+            <h3>Item-2</h3>
+            <p>Price: $200</p>
+            <p>Dolorem debitis voluptas alias repellat aperiam, autem labore nam? Pariatur minima iusto ratione placeat est asperiores voluptatum magni iste eum!</p>
+        </div>
+        <div class="content">
+            <img src="food.webp" alt="">
+            <h3>Item-3</h3>
+            <p>Price: $300</p>
+            <p>In eius unde ipsam veritatis doloremque labore, accusamus, consectetur soluta at quos ducimus nostrum molestiae similique porro illo suscipit placeat!</p>
+        </div>
+        <div class="content">
+            <img src="food.webp" alt="">
+            <h3>Item-4</h3>
+            <p>Price: $400</p>
+            <p>Similique fuga magni excepturi fugit praesentium aliquam magnam quos dicta vitae, aperiam animi fugiat deserunt neque autem esse dolorum sequi?</p>
+        </div>
+        <div class="content">
+            <img src="food.webp" alt="">
+            <h3>Item-5</h3>
+            <p>Price: $500</p>
+            <p>Dignissimos molestias quod quasi velit corporis iste fugit impedit modi tempore, facilis nemo explicabo, sapiente facere quis cupiditate. Quasi, assumenda.</p>
+        </div>
+        <div class="content">
+            <img src="food.webp" alt="">
+            <h3>Item-6</h3>
+            <p>Price: $600</p>
+            <p>Eaque quis ab voluptatem vel delectus, nemo itaque dolores rerum. Suscipit molestias voluptatem maxime nihil nobis temporibus. Deleniti, aspernatur vel.</p>
+        </div>
+        <div class="content">
+            <img src="food.webp" alt="">
+            <h3>Item-7</h3>
+            <p>Price: $700</p>
+            <p>Sapiente quisquam ullam sunt labore minus sit illum iure fugiat officia dolorem libero, temporibus, veniam a ipsam nihil accusamus numquam?</p>
+        </div>
+        <div class="content">
+            <img src="food.webp" alt="">
+            <h3>Item-8</h3>
+            <p>Price: $800</p>
+            <p>Delectus ducimus quidem sit cupiditate expedita at. Cum cupiditate expedita eaque perferendis harum? Eos optio ullam doloremque explicabo culpa porro!</p>
+        </div>
+        <div class="content">
+            <img src="food.webp" alt="">
+            <h3>Item-9</h3>
+            <p>Price: $900</p>
+            <p>Distinctio, dignissimos optio dolores voluptatibus necessitatibus corrupti ipsa esse iure eum quaerat assumenda a consequuntur rerum. Alias voluptatibus expedita culpa.</p>
+        </div>
+        <div class="content">
+            <img src="food.webp" alt="">
+            <h3>Item-10</h3>
+            <p>Price: $1000</p>
+            <p>Quos ad sunt nobis dolore voluptates itaque numquam? Quae necessitatibus saepe hic fugiat eum quisquam commodi, vitae aspernatur itaque consectetur.</p>
+        </div>
+        <div class="content">
+            <img src="food.webp" alt="">
+            <h3>Item-11</h3>
+            <p>Price: $1100</p>
+            <p>Quo enim impedit corrupti sunt repellendus? Tenetur, expedita vitae eveniet beatae fuga iste laboriosam aliquid quam ut quia, tempora delectus.</p>
+        </div>
+        <div class="content">
+            <img src="food.webp" alt="">
+            <h3>Item-12</h3>
+            <p>Price: $1200</p>
+            <p>Excepturi quasi doloremque accusamus dolorem repudiandae recusandae quo impedit adipisci perferendis dolor fuga qui vero at odit, asperiores doloribus soluta.</p>
+        </div>
+    </div>
+</body>
+</html>
