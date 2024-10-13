@@ -5,6 +5,9 @@ let student = {
     isStudent: true
 };
 
-let propOfStudent = Object.keys[student];
+let propOfStudent = Object.keys(student);
+console.log(propOfStudent);
 
-console.log("Number of Properties::", );
+console.log("Number of Properties::", propOfStudent.length);
+
+
