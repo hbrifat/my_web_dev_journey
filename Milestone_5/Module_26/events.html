@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Events</title>
+</head>
+<body>
+    <h1>HTML DOM Events</h1>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, architecto necessitatibus dolorum quam ea non quasi eum dignissimos quis ducimus.</p>
+
+    <button onclick="document.body.style.display = 'none' ">Click this button</button>
+
+    <button id="red">Red</button>
+
+    <button id="blue">Blue</button>
+
+    <button id="yellow">Yellow</button>
+
+
+    <script>
+        function makeRed(){
+            document.body.style.color = 'white';
+            document.body.style.backgroundColor = 'tomato';
+        }
+
+        function makeBlue(){
+            document.body.style.backgroundColor = 'dodgerblue';
+        }
+
+        function makeYellow(){
+            document.body.style.backgroundColor = 'yellow';
+            document.body.style.color = ''
+        }
+
+        const redBtn = document.getElementById('red');
+        redBtn.onclick = makeRed;
+
+        const blueBtn = document.getElementById('blue');
+        blueBtn.onclick = makeBlue;
+
+        const yellowBtn = document.getElementById('yellow');
+        yellowBtn.onclick = makeYellow;
+    </script>
+
+</body>
+</html>
