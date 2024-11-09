@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handlers</title>
+</head>
+<body>
+    <main>
+        <h1>Main Heading</h1>
+        <p id="dummy-txt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur repellendus sapiente beatae recusandae asperiores porro odio at delectus facere culpa, cum quos animi velit unde modi. Earum excepturi nulla culpa.</p>
+        <button onclick="changeText()">Click to change the text above!</button>
+        <button id="change-txt-btn">Click to change the text above!</button>
+
+
+        <div>
+            <p id="text-display">input new text</p>
+            <input type="text" class="input-box"> <button class="update-btn">Update</button>
+        </div>
+    </main>
+
+
+    <script>
+        function changeText(){
+            const selectTxt = document.getElementById('dummy-txt');
+
+            selectTxt.innerText = "Text Changed by onclick() function";
+
+            selectTxt.style.color = "";
+            selectTxt.style.backgroundColor = "";
+            selectTxt.style.border = "";
+
+        }
+
+        const handlerBtn = document.getElementById('change-txt-btn').addEventListener('click', function(){
+            document.getElementById('dummy-txt').innerText = "Text Changed by AddEventListener";
+
+            document.getElementById('dummy-txt').style.color = 'dodgerblue';
+            document.getElementById('dummy-txt').style.backgroundColor = 'white';
+            document.getElementById('dummy-txt').style.border = '1px solid red';
+        })
+
+        document.getElementsByClassName('update-btn')[0].addEventListener('click', function(){
+            const txtDisplay = document.getElementById('text-display');
+
+            const inputBox = document.getElementsByClassName('input-box')[0];
+
+            const inputBoxValue = inputBox.value;
+            
+            txtDisplay.innerText = inputBoxValue;
+
+            inputBox.value = '';
+            
+        })
+    </script>
+</body>
+</html>

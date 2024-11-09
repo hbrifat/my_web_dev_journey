@@ -1,0 +1,76 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+ </head>
+ <body>
+    
+    <div id="text-container">
+        <h1>First Heading</h1>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita cupiditate magnam pariatur tempore perspiciatis quod nesciunt maiores consectetur. Tenetur, quia?</p>
+    
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto minima iusto, illo libero sequi tempora quam nisi magni assumenda atque.</p>
+    
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus totam ratione repellendus autem cumque corrupti harum similique repellat voluptas tempora.</p>
+    </div>
+
+    <textarea id="textArea" cols="60" rows="10"></textarea> <br>
+
+    <button id="update-btn">Update</button>
+    <button id="update-btn-new">Update Now</button>
+
+
+    <script>
+        // 1. addEventListener to the btn
+
+        document.getElementById('update-btn').addEventListener('click', function(){
+            // 2. get the textBox & it's value
+
+            const textBox = document.getElementById('textArea');
+            const textBoxValue = textBox.value;
+
+            //3. setting the comment inside the conatiner
+
+            // a) get the comment conatiner
+            const commentContainer = document.getElementById('text-container');
+
+            // b) create a new element
+            const newPara = document.createElement('p');
+
+            // c) set innerText in p
+            newPara.innerText = textBoxValue;
+
+            // d) append child
+
+            commentContainer.appendChild(newPara);
+
+            // 4. clear the TextArea section
+
+            textBox.value = '';
+
+        })
+
+
+        // Another btn
+
+        document.getElementById('update-btn-new').addEventListener('click', function(){
+            const textBox = document.getElementById('textArea');
+            const textBoxValue = textBox.value;
+
+            const textContainer = document.getElementById('text-container');
+
+            const paragraphNew = document.createElement('p');
+            paragraphNew.innerText = textBoxValue;
+
+            textContainer.appendChild(paragraphNew);
+
+            textBox.value = "";
+        })
+
+
+    </script>
+ </body>
+ </html>

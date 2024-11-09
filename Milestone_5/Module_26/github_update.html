@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github like Delete btn</title>
+</head>
+<body>
+    <h1 id="delete-txt">Dummy Repository</h1>
+    <input type="text" id="input-box" placeholder="type Delete">
+    <button id="delete-btn" disabled>Delete</button>
+
+
+    <script>
+        const deleteBtn = document.getElementById('delete-btn');
+
+        document.getElementById('input-box').addEventListener('keyup', function(event){
+            let inputValue =  event.target.value;
+            if(inputValue.toLowerCase() == 'delete'){
+                deleteBtn.removeAttribute('disabled');
+            } else{
+                deleteBtn.setAttribute('disabled', true);
+            }
+            
+        })
+
+        document.getElementById('delete-btn').addEventListener('click', function(){
+            const deleteTxt = document.getElementById('delete-txt');
+            deleteTxt.style.display = 'none';            
+        })
+    </script>
+</body>
+</html>
