@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payoo - MFS</title>
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Daisy UI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <section class="flex">
+      <!-- Phone mock-up -->
+      <div class="mockup-phone">
+        <div class="camera"></div>
+        <div class="display">
+          <div class="artboard artboard-demo phone-3">
+            <!-- Stats -->
+            <div class="stats shadow">
+              <div class="stat">
+                <div class="stat-title font-bold underline text-xl">Balance Amount</div>
+                <div id="balance-amount" class="stat-value text-center">9400</div>
+              </div>
+            </div>
+            <div class="divider"></div>
+            <!-- Options Button -->
+            <div class="options-btn-section space-x-2">
+                <button id="add-money-option" class="btn">Add Money</button>
+                <button id="cash-out-option" class="btn">Cash Out</button>
+                <button id="transactions-option" class="btn">Transactions</button>
+            </div>
+            <div class="divider"></div>
+            <!-- Forms -->
+             <!-- Add money Form start -->
+             <div id="add-money-form" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <form class="card-body">
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Add Money Amount</span>
+                    </label>
+                    <input id="add-money-input" type="text" placeholder="Money amount" class="input input-bordered" required autocomplete="off"/>
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Pin</span>
+                    </label>
+                    <input id="add-money-pin" type="password" placeholder="Give your pin number" class="input input-bordered" required autocomplete="off" />
+                  </div>
+                  <div class="form-control mt-6">
+                    <button id="add-money-btn" class="btn btn-primary">Add Money</button>
+                  </div>
+                </form>
+              </div>
+             <!-- Add money Form end -->
+
+             <!-- Cash out Form start -->
+             <div id="cash-out-form" class=" hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <form class="card-body">
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Cash Out</span>
+                    </label>
+                    <input id="cash-out-input" type="text" placeholder="Cash out amount" class="input input-bordered" required autocomplete="off"/>
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Pin Number</span>
+                    </label>
+                    <input id="cash-out-pin" type="password" placeholder="Give your pin number" class="input input-bordered" required autocomplete="off"/>
+                  </div>
+                  <div class="form-control mt-6">
+                    <button id="cash-out-btn" class="btn btn-primary">Cash out</button>
+                  </div>
+                </form>
+              </div>
+             <!-- Cash out Form end -->
+
+             <!-- Transactions history start-->
+              <section id="transaction-history" class="hidden">
+                <h2 class="text-2xl font-bold underline">Transaction History</h2>
+
+              </section>
+             <!-- Transactions history end-->
+
+        </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/main.js"></script>
+    <script src="js/utilities.js"></script>
+  </body>
+</html>
