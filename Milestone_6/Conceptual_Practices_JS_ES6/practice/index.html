@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Person Select UI</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 h-screen">
+    
+    <div class="flex h-full">
+
+        <div class="w-1/4 p-4 bg-white shadow-lg">
+            <h2 class="text-xl font-semibold mb-4">
+                People
+            </h2>
+            <ul id="people-list" class="space-y-2">
+                <!-- people list will be added here -->
+
+            </ul>
+        </div>
+
+        <div class="w-3/4 p-8">
+            <div id="person-info" class="hidden p-6 bg-white rounded-lg shadow-lg">
+
+            </div>
+            <div id="no-selection" class="text-gray-500">
+                Select a person to see information.
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- javaScript -->
+     <script src="./main.js"></script>
+</body>
+</html>
