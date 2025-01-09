@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save some info in LocalStorage</title>
+
+    <!-- Daisy UI -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.22/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    
+    <input class="input border border-cyan-500 m-1" id="product-name" placeholder="product name" type="text"> <br>
+    <input class="input border border-cyan-500 m-1" id="product-quantity" placeholder="product quantity" type="text"> <br>
+    <button class="btn btn-success text-white m-1" id="add-product" onclick="addProduct()">Add Product</button>
+
+    <div>
+        <ul id="product-container">
+            
+        </ul>
+    </div>
+
+    <script src="localStorage.js"></script>
+</body>
+</html>
